@@ -107,7 +107,8 @@ class Register:
                 })
                 st.success("회원가입 성공! 로그인 페이지로 이동합니다.")
                 time.sleep(1)
-                st.switch_page(login_page_url)
+                st.switch_page('pages/login.py')
+                st.switch_page(Page_Login)
             except Exception:
                 st.error("회원가입 실패")
 
